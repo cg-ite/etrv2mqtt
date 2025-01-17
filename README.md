@@ -16,14 +16,14 @@ Install etrv2mqtt
 ```sh
 mkdir -p ~/venv/etrv2mqtt
 virtualenv ~/venv/etrv2mqtt
-~/venv/etrv2mqtt/bin/pip3 install 'git+https://github.com/keton/etrv2mqtt.git'
+~/venv/etrv2mqtt/bin/pip3 install 'git+https://github.com/Cymaphore/etrv2mqtt.git'
 ```
 
 ## Configuration
 Minimal `config.json` example. All parameters are described [here](docs/config_json.md).
 ```json
 {
-    "$schema": "https://raw.githubusercontent.com/keton/etrv2mqtt/master/etrv2mqtt/schemas/config.schema.json",
+    "$schema": "https://raw.githubusercontent.com/Cymaphore/etrv2mqtt/master/etrv2mqtt/schemas/config.schema.json",
     "thermostats": [
         {
             "topic": "Room",
