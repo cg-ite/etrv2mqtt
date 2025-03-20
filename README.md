@@ -23,7 +23,7 @@ Install etrv2mqtt
 ```sh
 mkdir -p ~/venv/etrv2mqtt
 virtualenv ~/venv/etrv2mqtt
-~/venv/etrv2mqtt/bin/pip3 install 'git+https://github.com/Cymaphore/etrv2mqtt.git'
+~/venv/etrv2mqtt/bin/pip3 install 'git+https://github.com/cg-ite/etrv2mqtt.git'
 ```
 
 ## Configuration
