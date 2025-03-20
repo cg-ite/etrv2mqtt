@@ -23,6 +23,6 @@ setuptools.setup(
         ]
     },
     install_requires=('jsonschema', 'loguru', 'paho-mqtt', 'schedule',
-                      'git+ssh://git@github.com/cg-ite/libetrv.git#egg=libetrv',),
+                      'libetrv @ git+ssh://git@github.com/cg-ite/libetrv.git#egg',),
     setup_requires=('wheel'),
 )
