@@ -2,11 +2,11 @@ import setuptools
 
 setuptools.setup(
     name="etrv2mqtt",
-    version="1.0.0",
-    author="Michał Lower",
-    author_email="keton22@gmail.com",
+    version="1.1.0",
+    author="Christian Günther",
+    author_email="cg-ite@gmx.de",
     description="MQTT bridge for Danfoss Eco BLE thermostats and Home Assistant",
-    url="https://github.com/keton/etrv2mqtt",
+    url="https://github.com/cg-ite/etrv2mqtt",
     packages=['etrv2mqtt', 'etrv2mqtt.schemas'],
     package_data={
         "etrv2mqtt.schemas": ["*.schema.json"],
