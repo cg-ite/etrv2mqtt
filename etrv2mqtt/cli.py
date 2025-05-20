@@ -12,8 +12,6 @@ def main(config_file: str):
     except Exception as e:
         logger.error(e)
         sys.exit(1)
-    # https://stackoverflow.com/questions/2058802/how-can-i-get-the-version-defined-in-setup-py-setuptools-in-my-package
-    logger.info('Starting etrv2mqtt V' + pkg_resources.get_distribution(__package__).version)
     deviceManager = DeviceManager(config, TRVDevice)
     deviceManager.poll_forever()
 
@@ -25,7 +23,8 @@ def entrypoint():
         sys.exit(1)
 
     try:
-        logger.info(sys.argv[0] + ' is starting')
+         # https://stackoverflow.com/questions/2058802/how-can-i-get-the-version-defined-in-setup-py-setuptools-in-my-package
+        logger.info(sys.argv[0] + ' ' + pkg_resources.get_distribution(__package__).version + ' is starting')
         main(sys.argv[1])
     except KeyboardInterrupt:
         pass
