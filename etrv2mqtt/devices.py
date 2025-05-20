@@ -57,6 +57,10 @@ class TRVDevice(DeviceBase):
             logger.error(e)
             if self._device.is_connected():
                 self._device.disconnect()
+        except BrokenPipeError as e:
+            logger.error("Device not readable {}", e)
+            if self._device.is_connected():
+                self._device.disconnect()
         return False
 
     def set_temperature(self, mqtt: Mqtt, temperature: float):
